@@ -66,15 +66,15 @@ RUN chmod +x /app/scripts/composer_install.sh \
 ##
 ## Install from dist
 ##
-ADD https://github.com/ludofleury/satisfy/archive/3.4.0.zip /
-RUN unzip 3.4.0.zip \
-    && mv /satisfy-3.4.0 /satisfy \
-    && rm -rf 3.4.0.zip
+#ADD https://github.com/ludofleury/satisfy/archive/3.4.0.zip /
+#RUN unzip 3.4.0.zip \
+#    && mv /satisfy-3.4.0 /satisfy \
+#    && rm -rf 3.4.0.zip
 
 ##
 ##
 ## Install from composer/packagist
-#RUN composer create-project playbloom/satisfy:dev-master
+RUN composer create-project playbloom/satisfy:dev-master
 
 ##
 ## Install from git clone
