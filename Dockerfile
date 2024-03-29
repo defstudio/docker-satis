@@ -74,7 +74,7 @@ RUN chmod +x /app/scripts/composer_install.sh \
 ##
 ##
 ## Install from composer/packagist
-RUN composer create-project playbloom/satisfy:dev-master
+RUN composer create-project playbloom/satisfy:dev-main
 
 ##
 ## Install from git clone
